@@ -1,0 +1,49 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Header style */
+header {
+    width: 100%;
+    height: auto;
+    padding: 1.25rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > .container > .navi {
+    display: flex;
+    column-gap: var(--el-s-interval);
+}
+
+header .navi a {
+    font-weight: 600;
+    font-size: var(--f-n-size);
+    letter-spacing: 1px; /* 글자와 글자 사이의 간격 */
+    color: var(--f-m-color);
+    transition: all .4s;
+
+}
+
+/* 
+header .navi a:hover {
+    color: var(--f-g-color);
+}
+
+header .navi li.active a {
+    color: var(--f-g-color) ;
+}
+*/
+/* 위의 2개는 적용을 할려는 내용이 같으므로 아래처럼 합쳐서 간소화 시킬 수 있다. */
+
+header .navi a:hover,
+header .navi li.active a {
+    color: var(--f-g-color);
+}

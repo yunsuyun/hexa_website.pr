@@ -8,13 +8,9 @@ root (common 가상의 공식을 만듣어서 해당 공식을 사용하면 적�
     --f-m-color : #2a2a2a;
     --f-g-color : #aaa;
     --f-n-size : .9375rem;
-
-
-   
    
     /* color */
     --bg-color : #2a2a2a;
-   
    
     /* element interval */
     --el-s-interval : 1.875rem;
@@ -28,4 +24,10 @@ root (common 가상의 공식을 만듣어서 해당 공식을 사용하면 적�
     width: 1200px;
     height: auto;
     margin: auto;
+}
+
+/* Dot Bottom */
+.dot-bottom {
+    border-bottom: 2px dotted #eee;
+
 }
