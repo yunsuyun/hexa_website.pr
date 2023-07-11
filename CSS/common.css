@@ -1,0 +1,21 @@
+/*
+---------------------------------------------
+root
+---------------------------------------------
+*/
+:root{
+    /* font */
+    --f-m-color : #2a2a2a;
+    --f-g-color : #aaa;
+    --f-n-size : .9375rem;
+   
+   
+    /* color */
+    --bg-color : #2a2a2a;
+   
+   
+    /* element interval */
+    --el-s-interval : 1.875rem;
+   }
+   
+   
