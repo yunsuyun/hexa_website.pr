@@ -1,6 +1,6 @@
 /*
 ---------------------------------------------
-root
+root (common 가상의 공식을 만듣어서 해당 공식을 사용하면 적용을 시킬 수 있다.)
 ---------------------------------------------
 */
 :root{
@@ -8,6 +8,8 @@ root
     --f-m-color : #2a2a2a;
     --f-g-color : #aaa;
     --f-n-size : .9375rem;
+
+
    
    
     /* color */
@@ -17,5 +19,13 @@ root
     /* element interval */
     --el-s-interval : 1.875rem;
    }
-   
-   
+
+/*
+    container - fit center element
+*/
+
+.container {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
