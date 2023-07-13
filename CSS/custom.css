@@ -47,3 +47,82 @@ header .navi a:hover,
 header .navi li.active a {
     color: var(--f-g-color);
 }
+
+
+/* Hero Section Style */
+.hero {
+    padding: 2.5rem;
+}
+.hero .container {
+    display: flex;   
+    column-gap: .9375rem;
+}
+
+.hero .container img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .container .left-side,
+.hero .container .right-side {
+    width: 50%;
+    position: relative;
+}
+
+.hero .container .right-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9375rem;
+}
+
+.hero .container .right-side > div {
+    width: calc(50% - .4688rem);
+    gap: .9375rem;
+    position: relative;
+}
+
+.hero .left-side .inside-txt {
+    position: absolute;
+    color: #fff; /* a 태그, input 태그 는 부모의 색상을 상속 받지 않는다. */
+    width: 85%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero .left-side .inside-txt h4 {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.hero .left-side .inside-txt span {
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.875rem 0 1.875rem;
+}
+
+.hero .right-side .inside-grid-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .0375rem;
+    color: #fff;
+}
+
+.hero .right-side .inside-grid-txt h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero .right-side .inside-grid-txt span {
+    font-style: italic;
+    
+}
