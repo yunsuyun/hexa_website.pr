@@ -124,5 +124,38 @@ header .navi li.active a {
 
 .hero .right-side .inside-grid-txt span {
     font-style: italic;
-    
+}
+
+.hero .right-side .hover-box {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    /* background: #000; */
+    color: #fff;
+    z-index: 999; /*static 이 아닌 포지션 요소가 겹쳤을 때 높은 숫자가 위로 올라감*/
+    /* opacity: 0.5; */ /* 투명도 조절 0 ~ 1 사이의 값 주의 사항 1. 자식에게 상속함 이게 싫으면 RGB a 를 사용해야 함 2. display:none 으로하면 opacity 0 처럼 보이지 않게 되는 opacity 0 은 투명해질 뿐 실제로는 존재하는 상테이고 display 는 실체 자체가 사라지게 된다.*/
+    background: rgba(42, 42, 42, 0.9); /* a(알파값)이 투명도이며, 자식 요소에게 상속되지 않는다.*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* transform 은 중복해서 사용할 수 없다. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    opacity: 0; /* 사라지는 효과로 사용할 경우 요소는 그대로 남고 보이지만 않게 된다. 이럴 경우 visibility 속석을 hidden, visable로 변경하며  이용한다.*/
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.hero .container .right-side > div:hover .hover-box{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero .right-side .hover-box span {
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.75rem;
+    font-weight: 300;
 }

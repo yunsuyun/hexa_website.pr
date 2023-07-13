@@ -21,9 +21,16 @@ root (common 가상의 공식을 만듣어서 해당 공식을 사용하면 적�
 */
 
 .container {
-    width: 1200px;
+    
+    width: 100%;
+    max-width: 1280px;
     height: auto;
     margin: auto;
+}
+
+/* Sub Section Padding */
+.sub-section {
+    padding: 5.625rem 0;
 }
 
 /* Dot Bottom */
@@ -45,4 +52,23 @@ root (common 가상의 공식을 만듣어서 해당 공식을 사용하면 적�
 .common-btn:hover {
     color: var(--f-m-color);
     background: #fff;
+}
+
+/* Section Title Style */
+.section-title{
+    width: 100%;
+    height: auto;
+}
+
+.section-title h3 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: var(--f-m-color);
+}
+
+.section-title p{
+    font-size: 0.875rem;
+    color: var(--f-g-color);
+    font-style: italic;
+    font-weight: 400;
 }
